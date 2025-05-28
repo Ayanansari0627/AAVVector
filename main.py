@@ -128,11 +128,11 @@ def main():
     print(f"📦 Vector A: {len(vectors['VectorA'])} bp | Vector B: {len(vectors['VectorB'])} bp")
 
     if args.method == 'trans-splicing':
-        print(f"🔁 Overlap region ({args.overlap} bp) added for trans-splicing")
+        print(f" Overlap region ({args.overlap} bp) added for trans-splicing")
     elif args.method == 'intein':
-        print(f"🔗 Intein overlap ({args.overlap} bp) embedded")
+        print(f" Intein overlap ({args.overlap} bp) embedded")
     elif args.method == 'custom':
-        print(f"🧩 Custom overlap region of {args.overlap} bp used")
+        print(f" Custom overlap region of {args.overlap} bp used")
 
     if len(vectors['VectorA']) <= AAV_LIMIT_BP and len(vectors['VectorB']) <= AAV_LIMIT_BP:
         print(f"✅ All segments fit within 4.7 kB packaging limit")
